@@ -1,5 +1,5 @@
 #include <Arduino.h>
-//#include "pinmap.h"
+#include "pinmap.h"
 
 const uint LED_PIN = 25;
 
@@ -8,17 +8,20 @@ int myFunction(int, int);
 
 void setup() {
   // put your setup code here, to run once:
- // Serial.begin(9600);
-  gpio_set_dir(LED_BUILTIN, GPIO_OUT);
- // Serial.println("Fujinet acsi2spi started...");
+  Serial.begin(9600);
+  pinMode(LED_PIN,OUTPUT);
+  sleep_ms(4000);
+  Serial.println("Fujinet acsi2spi started...");
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
-  gpio_put(LED_BUILTIN,1);
-  sleep_ms(250);
-  gpio_put(LED_BUILTIN,0);
-  sleep_ms(250);
+  digitalWrite(LED_PIN,1);
+  Serial.println("ON!");
+  sleep_ms(1000);
+  digitalWrite(PIN_LED,0);
+  Serial.println("OFF!");
+  sleep_ms(1000);
 }
 
 // put function definitions here:
