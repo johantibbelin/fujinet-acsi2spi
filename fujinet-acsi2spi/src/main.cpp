@@ -3,9 +3,6 @@
 
 const uint LED_PIN = 25;
 
-// put function declarations here:
-int myFunction(int, int);
-
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
@@ -22,9 +19,4 @@ void loop() {
   digitalWrite(PIN_LED,0);
   Serial.println("OFF!");
   sleep_ms(1000);
-}
-
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
 }
