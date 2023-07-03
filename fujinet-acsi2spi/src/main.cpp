@@ -1,4 +1,6 @@
 #include <Arduino.h>
+#include <stdlib.h>
+#include "pinmap.h"
 
 // put function declarations here:
 int myFunction(int, int);
