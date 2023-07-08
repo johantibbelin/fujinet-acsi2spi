@@ -9,6 +9,9 @@ void setup() {
   pinMode(LED_PIN,OUTPUT);
   sleep_ms(4000);
   Serial.println("Fujinet acsi2spi started...");
+
+  /* Setup Serial */
+  
 }
 
 void loop() {
@@ -19,4 +22,5 @@ void loop() {
   digitalWrite(PIN_LED,0);
   Serial.println("OFF!");
   sleep_ms(1000);
+  
 }

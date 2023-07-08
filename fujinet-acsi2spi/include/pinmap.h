@@ -1,10 +1,16 @@
 #ifndef PINMAP_H
 #define PINMAP_H
 
+#include <Arduino.h>
+/* UART to esp32 (debug) */
+
+#define ESP_TX  UART0_TX
+#define ESP RX  UART0_RX
+
 /* ACSI pins */
 
 /* data pins */
-#define ACSI_D0
+#define ACSI_D0 
 #define ACSI_D1
 #define ACSI_D2
 #define ACSI_D3
