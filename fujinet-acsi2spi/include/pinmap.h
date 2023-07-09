@@ -7,6 +7,13 @@
 #define ESP_TX  UART0_TX
 #define ESP RX  UART0_RX
 
+/* SPI pins */
+
+#define ESP_MOSI
+#define ESP_MISO
+#define ESP_CLK
+#define ESP_CS
+
 /* ACSI pins */
 
 /* data pins */
