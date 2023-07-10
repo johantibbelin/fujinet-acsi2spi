@@ -4,34 +4,38 @@
 #include <Arduino.h>
 /* UART to esp32 (debug) */
 
-#define ESP_TX  UART0_TX
-#define ESP RX  UART0_RX
+#define ESP_TX  1
+#define ESP RX  2
 
 /* SPI pins */
 
-#define ESP_MOSI
-#define ESP_MISO
-#define ESP_CLK
-#define ESP_CS
+#define ESP_MOSI 19
+#define ESP_MISO 16
+#define ESP_CLK  18
+#define ESP_CS   17
+
+/* Bus tranciver direction pin (data pins) */
+
+#define TRANS_DATA_DIR  7
 
 /* ACSI pins */
 
 /* data pins */
-#define ACSI_D0 
-#define ACSI_D1
-#define ACSI_D2
-#define ACSI_D3
-#define ACSI_D4
-#define ACSI_D5
-#define ACSI_D6
-#define ACSI_D7
+#define ACSI_D0 15                           
+#define ACSI_D1 14
+#define ACSI_D2 13
+#define ACSI_D3 12
+#define ACSI_D4 11
+#define ACSI_D5 10
+#define ACSI_D6 9
+#define ACSI_D7 8
 
 /* Control pins */
-#define ACSI_RESET
-#define ACSI_A1
-#define ACSI_CS
-#define ACSI_IRQ
-#define ACSI_ACK
+#define ACSI_RESET  22
+#define ACSI_A1     27     
+#define ACSI_CS     28
+#define ACSI_IRQ    -1
+#define ACSI_ACK    
 #define ACSI_DRQ
 
 #endif /* PINMAP_H */
