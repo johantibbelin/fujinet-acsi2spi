@@ -1,7 +1,18 @@
+/**
+ * @file pinmap.h
+ * @author Johan Tibbelin (sjfroos) (johan.roos@tibbelin.com)
+ * @brief Pinmap for acsi2spi firmware
+ * @version 0.1
+ * @date 2023-07-11
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ */
 #ifndef PINMAP_H
 #define PINMAP_H
 
 #include <Arduino.h>
+
 /* UART to esp32 (debug) */
 
 #define ESP_TX  1
