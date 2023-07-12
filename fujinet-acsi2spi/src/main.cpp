@@ -1,3 +1,13 @@
+/**
+ * @file main.cpp
+ * @author Johan Tibbelin (sjfroos) (johan.roos@tibbelin.com)
+ * @brief main file of acsi2spi a Raspberry Pi Pico acsi controller for use with Fujinet.
+ * @version 0.1
+ * @date 2023-07-12
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ */
 #include <Arduino.h>
 #include "pinmap.h"
 
