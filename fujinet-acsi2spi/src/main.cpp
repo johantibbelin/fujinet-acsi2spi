@@ -1,4 +1,6 @@
 /**
+ * acsi2spi - Raspberry Pi pico firmware for use with Fujinet for the Atari 16bit platform. 
+ *
  * @file main.cpp
  * @author Johan Tibbelin (sjfroos) (johan.roos@tibbelin.com)
  * @brief main file of acsi2spi a Raspberry Pi Pico acsi controller for use with Fujinet.
@@ -10,7 +12,7 @@
  */
 #include <Arduino.h>
 #include "pinmap.h"
-
+#include <pico/platform.h>
 const uint LED_PIN = 25;
 
 void setup() {
