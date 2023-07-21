@@ -34,5 +34,7 @@ void loop() {
   digitalWrite(PIN_LED,0);
   Serial.println("OFF!");
   sleep_ms(1000);
-  
+  if (digitalRead(ACSI_RESET)==LOW) {
+    Serial.println("Atari Reseted.");
+  }
 }
