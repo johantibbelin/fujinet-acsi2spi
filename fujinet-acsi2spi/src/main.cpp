@@ -21,7 +21,7 @@ void setup() {
   pinMode(LED_PIN,OUTPUT);
   sleep_ms(4000);
   Serial.println("Fujinet acsi2spi started...");
-
+  pinMode(ACSI_RESET, INPUT);
   /* Setup Serial */
   
 }
