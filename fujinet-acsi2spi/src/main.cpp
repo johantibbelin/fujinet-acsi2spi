@@ -23,6 +23,8 @@ void setup() {
   Serial.println("Fujinet acsi2spi started...");
   pinMode(ACSI_RESET, INPUT);
   /* Setup Serial */
+
+  /* Setup SPI */
   
 }
 
